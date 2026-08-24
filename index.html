@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadhif - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Projek">Projek</a></li>
+            <li><a href="#Hoby">Hoby</a></li>
+            <li><a href="#Pengalaman">Pengalaman</a></li>
+            <li><a href="#Mendaki-gunung">Mendaki Gunung</a></li>
+            <li class="divider"></li>
+            <li><a href="https://nadhiff85.github.io/Tugas_4/">Portofolio</a></li>
+            <li><a href="sosial-media.html">Sosial Media</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Audio Background -->
+    <audio id="bgMusic" autoplay loop src="Raim_Laode_-_Bersenja_Gurau___Official_Lirik__(128k).m4a.mp4"></audio>
+
+    <!-- Header Section -->
+    <header id="home" class="hero-animated">
+        <!-- Canvas for particle background -->
+        <canvas id="particleCanvas"></canvas>
+        <div class="container hero-container">
+            <div class="hero-content-grid">
+                <div class="hero-text-area">
+                    <h2 class="hero-subtitle">hi, i'm<br><span class="highlight">Nadhif</span></h2>
+                    <p class="hero-desc">Saya adalah seorang mahasiswa Sistem Informasi di Universitas Islam Negeri Datokarama Palu. Website portofolio ini saya buat sebagai bagian dari tugas mata kuliah Pemrograman Web di semester 3. Saya memiliki minat besar di bidang teknologi, desain antarmuka, dan pengembangan web. Selain itu, saya juga menyukai aktivitas outdoor seperti mendaki gunung dan berolahraga. Tujuan saya adalah untuk terus belajar, berkembang, dan menciptakan karya digital yang bermanfaat bagi banyak orang.</p>
+                    
+                    <div class="glass-cards">
+                        <a href="https://www.linkedin.com/in/nadhif-azhar-5979ab395" target="_blank" class="glass-card">
+                            <div class="icon"><i class="fab fa-linkedin" style="color: #0077b5;"></i></div>
+                            <div class="text">LinkedIn</div>
+                        </a>
+                        <a href="#Projek" class="glass-card">
+                            <div class="icon"><i class="fas fa-laptop-code" style="color: #a78bfa;"></i></div>
+                            <div class="text">Projek</div>
+                        </a>
+                        <button id="musicToggleBtn" class="glass-card" style="cursor:pointer;">
+                            <div class="icon" id="musicIcon"><i class="fas fa-music" style="color: #ec4899;"></i></div>
+                            <div class="text" id="musicText" style="min-width: 110px; text-align: left;">Play Music</div>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-image-area">
+                    <figure>
+                        <img src="Nadhif.jpg" alt="Nadhif - Web Developer">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Halaman Section -->
+    <section id="halaman" style="padding-top: 100px; padding-bottom: 50px;">
+        <div class="container reveal">
+            <h2 class="section-title" style="margin-bottom: 60px;">Daftar Konten</h2>
+            <div style="display: flex; justify-content: center;">
+                <div class="halaman" style="padding: 0; width: 100%; display: flex; justify-content: center;">
+                    <ul class="halaman-list">
+                        <li>
+                            <span class="card-number">01</span>
+                            <span class="card-text">Desain Figma Smart Home (Voice Control)</span>
+                        </li>
+                        <li>
+                            <span class="card-number">02</span>
+                            <span class="card-text">Website Manajemen Hotel Berbasis Web</span>
+                        </li>
+                        <li>
+                            <span class="card-number">03</span>
+                            <span class="card-text">Apotek Digital</span>
+                        </li>
+                        <li>
+                            <span class="card-number">04</span>
+                            <span class="card-text">Sirantrean Gikara (Sistem Antrian Klinik)</span>
+                        </li>
+                        <li>
+                            <span class="card-number">05</span>
+                            <span class="card-text">Hoby saya</span>
+                        </li>
+                        <li>
+                            <span class="card-number">06</span>
+                            <span class="card-text">Pengalaman Kompetisi Futsal</span>
+                        </li>
+                        <li>
+                            <span class="card-number">07</span>
+                            <span class="card-text">Mendaki gunung</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="Projek" class="Projek-section">
+        <div class="container">
+            <h2 class="section-title reveal">Karya Pilihan</h2>
+            
+            <div class="project reveal">
+            <div class="project-content">
+                <div class="project-image">
+                    <figure>
+                        <img src="figma.jpg" alt="Figma Smart Home">
+                        <figcaption>Tampilan desain awal Smart Home dengan perintah suara</figcaption>
+                    </figure>
+                </div>
+                <div class="project-text">
+                    <h2>1. Desain Figma<br>Smart Home (Voice Control)</h2>
+                    <p>Proyek ini merupakan desain antarmuka Smart Home yang dikembangkan menggunakan Figma. 
+                    Konsepnya berfokus pada kemudahan pengguna untuk mengontrol perangkat rumah seperti lampu dan 
+                    AC dengan <em>perintah suara</em>. Desain dibuat dengan pendekatan minimalis, 
+                    intuitif, dan ramah pengguna.</p>
+                    <p><strong>Jika ingin melihat silahkan klik di bawah ini</strong></p>
+                    <a href="https://www.figma.com/proto/Hdlbuz1SjnqlTr659gmrOg/Tugas-IMK?node-id=1-340&p=f&t=8lalubAtivjUxV1l-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" class="button" target="_blank">Tampilkan</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proyek Website Manajemen Hotel -->
+        <div class="project reveal">
+            <div class="project-content">
+                <div class="project-image">
+                    <figure>
+                        <img src="website manajemen hotel.jpg" alt="Website Manajemen Hotel">
+                        <figcaption>Tampilan halaman utama website manajemen hotel</figcaption>
+                    </figure>
+                </div>
+                <div class="project-text">
+                    <h2>2. Website Manajemen Hotel<br>Berbasis Web</h2>
+                    <p>Website ini dirancang untuk membantu proses reservasi, manajemen kamar, dan administrasi hotel 
+                    secara digital. Dibangun menggunakan Python, HTML, dan CSS dengan tampilan modern, responsif, serta 
+                    mudah digunakan oleh admin dan pelanggan.</p>
+                    <p><strong>Jika ingin melihat silahkan klik di bawah ini</strong></p>
+                    <a href="https://2982897c-6411-4bc0-ae8a-046a28c44393-00-2qgt1u1uhcm2j.sisko.replit.dev/" class="button" target="_blank">Tampilkan</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proyek Apotek Digital -->
+        <div class="project reveal">
+            <div class="project-content">
+                <div class="project-image">
+                    <figure>
+                        <img src="apotek_digital.png" alt="Apotek Digital">
+                        <figcaption>Tampilan Dashboard Admin Aplikasi Apotek Digital</figcaption>
+                    </figure>
+                </div>
+                <div class="project-text">
+                    <h2>3. Apotek Digital</h2>
+                    <p>Proyek ini merupakan sistem informasi apotek berbasis web yang dikembangkan menggunakan PHP, MySQL, dan CSS. Sistem ini dirancang untuk mengelola data obat, resep digital, transaksi penjualan, serta data pasien secara terintegrasi. Terdapat dua portal utama yaitu Portal Admin untuk apoteker dan staf dalam mengelola operasional apotek, serta Portal Pasien untuk melihat resep, memesan obat, dan riwayat pembelian. Dibangun dengan tampilan modern, responsif, dan ramah pengguna.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proyek Sirantrean Gikara -->
+        <div class="project reveal">
+            <div class="project-content">
+                <div class="project-image">
+                    <figure>
+                        <img src="sirantrean_gikara.png" alt="Sirantrean Gikara - Sistem Antrian Klinik">
+                        <figcaption>Tampilan halaman utama Sistem Antrian Klinik</figcaption>
+                    </figure>
+                </div>
+                <div class="project-text">
+                    <h2>4. Sirantrean Gikara<br>Sistem Antrian Klinik</h2>
+                    <p>Proyek ini merupakan aplikasi web Sistem Antrian Klinik yang dikembangkan sebagai bahan praktik menggunakan framework Laravel. Aplikasi ini mensimulasikan alur antrian pasien secara digital, mulai dari reservasi online, check-in, pemanggilan antrian, hingga pengambilan obat di apotek. Dilengkapi dengan fitur multi-role untuk admin, apoteker, dan super admin, serta tampilan display antrian real-time untuk monitor klinik. Dibangun dengan pendekatan modern menggunakan Tailwind CSS dan Vite.</p>
+                    <p><em>Proyek ini hanya dibuat untuk keperluan pembelajaran dan tidak dipublikasikan secara online.</em></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hoby Section -->
+        <div class="project reveal" id="Hoby">
+            <div class="project-content">
+                <div class="project-image">
+                    <figure>
+                        <img src="hoby.jpg" alt="Hoby">
+                        <figcaption>Salah satu foto hoby saya</figcaption>
+                    </figure>
+                </div>
+                <div class="project-text">
+                    <h2>5. Hoby saya</h2>
+                    <ul class="Hoby-list">
+                        <li>01_Sepak Bola</li>
+                        <li>02_Futsal</li>
+                        <li>03_Bulu Tangkis</li>
+                        <li>04_Mendaki Gunung</li>
+                        <li>05_Berlari</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="Pengalaman" class="Pengalaman-section">
+        <h2 class="section-title reveal">6. Pengalaman Kompetisi Futsal</h2>
+        <div class="experience-timeline reveal">
+            <div class="experience-item">
+                <div class="experience-content">
+                    <div class="experience-year">FUTSAL TOURNAMENT ASYIFA WALET CUP 2021</div>
+                    <div class="experience-year">TURNAMEN FUTSAL COPA HMM 2023</div>
+                    <div class="experience-year">MANDUA CUP VOL.III 2023</div>
+                    <div class="experience-year">LIGA FUTSAL PELAJAR PIALA GUBERNUR 2024</div>
+                    <div class="experience-year">IKA UNISA CUP 2024</div>
+                    <div class="experience-year">TURNAMEN FUTSAL ECONOMY CUP UNISA 2024</div>
+                    <div class="experience-year">PATRA SUPER LEAGUE II 2024</div>
+                    <div class="experience-year">FUTSAL CUP IPMBL 2025</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mendaki Gunung Section -->
+    <section id="Mendaki-gunung" class="Mendaki">
+        <h2 class="section-title reveal">7. Mendaki Gunung</h2>
+        <div class="project reveal" style="margin-top: 60px;">
+            <div class="project-content">
+                <div class="project-image">
+                    <figure>
+                        <img src="mendaki.jpg" alt="Mendaki Gunung">
+                        <figcaption>Mendaki gunung bersama komunitas</figcaption>
+                    </figure>
+                </div>
+                <div class="project-text">
+                    <h2>7. Mendaki Gunung</h2>
+                    <p>Mendaki gunung untuk menikmati keindahan alam dan pemandangan yang begitu menakjubkan, 
+                    serta mendapatkan manfaat kesehatan. Mendaki gunung juga bisa untuk menenangkan pikiran, mengurangi stress 
+                    dan merasakan pencapaian saat berhasil sampai puncak. Tentunya saya juga mendaki tidak sendirian tetapi 
+                    bersama teman-teman komunitas @come_and_gooo yang bermakna kita datang dan pergi, sesuai dengan tujuannya 
+                    ke gunung datang untuk melihat pemandangan dan pulang setelah puas dengan keindahan alam yang diciptakan tuhan.</p>
+                    <p><strong>Jika ingin melihat instagram kami silahkan klik di bawah ini</strong></p>
+                    <a href="https://www.instagram.com/come_and_gooo?igsh=b2twMmZrczBvdmVx" class="button" target="_blank">Melihat</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h2>Any Questions?<br>Find me here<br><a href="mailto:nadhifazhar19@gmail.com">nadhifazhar19@gmail.com</a></h2>
+            </div>
+            
+            <div class="message-form-container">
+                <h3>Kirim Pesan Anonim</h3>
+                <p>Tinggalkan pesan, kesan, atau saran untuk saya tanpa perlu login!</p>
+                <form id="anonMessageForm" class="message-form">
+                    <input type="hidden" name="access_key" value="ed679251-a773-4b95-8536-8e802379bc03">
+                    <input type="hidden" name="subject" value="Pesan Anonim Baru dari Web Portofolio!">
+                    <div class="form-group">
+                        <input type="text" name="name" id="senderName" placeholder="Nama / Username (Kosongkan jika Anonim)">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="senderMessage" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                    </div>
+                    <button type="submit" class="button submit-btn">Kirim Pesan <i class="fas fa-paper-plane" style="margin-left: 5px;"></i></button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+        <p class="copyright">Designed & Developed by Nadhif Azhar 2026</p>
+    </footer>
+
+    <!-- Script for Particle Animation -->
+    <script>
+        const canvas = document.getElementById('particleCanvas');
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+            let width, height;
+            let particles = [];
+            
+            // Mouse interaction state
+            let mouse = { x: null, y: null, radius: 200, isPressed: false };
+            window.addEventListener('mousemove', (e) => {
+                mouse.x = e.x;
+                mouse.y = e.y;
+            });
+            window.addEventListener('mousedown', () => { mouse.isPressed = true; });
+            window.addEventListener('mouseup', () => { mouse.isPressed = false; });
+            window.addEventListener('mouseout', () => {
+                mouse.x = null;
+                mouse.y = null;
+                mouse.isPressed = false;
+            });
+            
+            function resize() {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+            }
+            window.addEventListener('resize', resize);
+            resize();
+            
+            const colors = ['#a78bfa', '#ec4899', '#34d399', '#0ea5e9', '#f59e0b'];
+            
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * width;
+                    this.y = Math.random() * height;
+                    this.baseVx = (Math.random() - 0.5) * 2.5;
+                    this.baseVy = (Math.random() - 0.5) * 2.5;
+                    this.vx = this.baseVx;
+                    this.vy = this.baseVy;
+                    // Simulate Z-depth (smaller = further, slower)
+                    this.z = Math.random() * 0.8 + 0.2; 
+                    this.radius = (Math.random() * 2 + 1.5) * this.z;
+                    this.color = colors[Math.floor(Math.random() * colors.length)];
+                    this.angle = Math.random() * Math.PI * 2;
+                }
+                update() {
+                    // Wall collision
+                    if(this.x < 0 || this.x > width) this.baseVx = -this.baseVx;
+                    if(this.y < 0 || this.y > height) this.baseVy = -this.baseVy;
+                    
+                    this.vx = this.baseVx * this.z;
+                    this.vy = this.baseVy * this.z;
+
+                    if (mouse.x != null) {
+                        let dx = mouse.x - this.x;
+                        let dy = mouse.y - this.y;
+                        let distance = Math.sqrt(dx * dx + dy * dy);
+                        
+                        if (mouse.isPressed) {
+                            // Vortex / Black Hole effect
+                            if (distance > 10) {
+                                // Suck in
+                                this.baseVx += (dx / distance) * 0.5;
+                                this.baseVy += (dy / distance) * 0.5;
+                                // Spin around
+                                this.baseVx += (dy / distance) * 0.8;
+                                this.baseVy -= (dx / distance) * 0.8;
+                            }
+                        } else if (distance < mouse.radius) {
+                            // Repel effect when just hovering
+                            const forceDirectionX = dx / distance;
+                            const forceDirectionY = dy / distance;
+                            const force = (mouse.radius - distance) / mouse.radius;
+                            this.vx -= forceDirectionX * force * 5;
+                            this.vy -= forceDirectionY * force * 5;
+                        }
+                    }
+                    
+                    // Friction/damping to slow down after explosion or repel
+                    this.baseVx = this.baseVx * 0.99;
+                    this.baseVy = this.baseVy * 0.99;
+                    
+                    // Keep a minimum speed
+                    if (Math.abs(this.baseVx) < 0.5) this.baseVx += (this.baseVx > 0 ? 0.05 : -0.05);
+                    if (Math.abs(this.baseVy) < 0.5) this.baseVy += (this.baseVy > 0 ? 0.05 : -0.05);
+                    
+                    // Cap max speed
+                    const speed = Math.sqrt(this.baseVx * this.baseVx + this.baseVy * this.baseVy);
+                    if (speed > 15) {
+                        this.baseVx = (this.baseVx / speed) * 15;
+                        this.baseVy = (this.baseVy / speed) * 15;
+                    }
+
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    this.angle += 0.05;
+                }
+                draw() {
+                    ctx.beginPath();
+                    // Pulse radius based on sine wave
+                    ctx.arc(this.x, this.y, Math.max(0.1, this.radius + Math.sin(this.angle) * 1), 0, Math.PI * 2);
+                    ctx.fillStyle = this.color;
+                    ctx.shadowBlur = 15 * this.z;
+                    ctx.shadowColor = this.color;
+                    ctx.fill();
+                    ctx.shadowBlur = 0; 
+                }
+            }
+            
+            const particleCount = window.innerWidth < 768 ? 60 : 130;
+            for(let i=0; i<particleCount; i++) particles.push(new Particle());
+            
+            function animate() {
+                // Clear completely so the CSS background shows through
+                ctx.clearRect(0, 0, width, height);
+                
+                particles.forEach(p => {
+                    p.update();
+                    p.draw();
+                });
+                
+                for(let i=0; i<particles.length; i++) {
+                    for(let j=i+1; j<particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const dist = Math.sqrt(dx*dx + dy*dy);
+                        
+                        if(dist < 130) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            // Thicker lines for closer particles
+                            ctx.lineWidth = (1 - dist/130) * 1.5;
+                            ctx.strokeStyle = `rgba(167, 139, 250, ${ (1 - dist/130) * 0.6 })`;
+                            ctx.stroke();
+                        }
+                    }
+                    
+                    if (mouse.x != null && !mouse.isPressed) {
+                        const mdx = particles[i].x - mouse.x;
+                        const mdy = particles[i].y - mouse.y;
+                        const mdist = Math.sqrt(mdx*mdx + mdy*mdy);
+                        if(mdist < 180) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(mouse.x, mouse.y);
+                            ctx.lineWidth = (1 - mdist/180) * 2;
+                            ctx.strokeStyle = `rgba(236, 72, 153, ${ (1 - mdist/180) * 0.8 })`;
+                            ctx.stroke();
+                        }
+                    }
+                }
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+    </script>
+    
+    <!-- Script for Music Control -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const bgMusic = document.getElementById('bgMusic');
+            const musicToggleBtn = document.getElementById('musicToggleBtn');
+            const musicIcon = document.getElementById('musicIcon');
+            const musicText = document.getElementById('musicText');
+
+            bgMusic.volume = 0.5;
+
+            // Attempt autoplay
+            let playPromise = bgMusic.play();
+            if (playPromise !== undefined) {
+                playPromise.then(_ => {
+                    musicIcon.innerHTML = '<i class="fas fa-volume-up" style="color: #ec4899;"></i>';
+                    musicText.innerText = 'Pause Music';
+                }).catch(error => {
+                    musicIcon.innerHTML = '<i class="fas fa-volume-mute" style="color: #ec4899;"></i>';
+                    musicText.innerText = 'Play Music';
+                });
+            }
+
+            musicToggleBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (bgMusic.paused) {
+                    bgMusic.play();
+                    musicIcon.innerHTML = '<i class="fas fa-volume-up" style="color: #ec4899;"></i>';
+                    musicText.innerText = 'Pause Music';
+                } else {
+                    bgMusic.pause();
+                    musicIcon.innerHTML = '<i class="fas fa-volume-mute" style="color: #ec4899;"></i>';
+                    musicText.innerText = 'Play Music';
+                }
+            });
+
+            // Fallback: Start music on any first click if autoplay was blocked
+            document.body.addEventListener('click', function tryPlay() {
+                if(bgMusic.paused) {
+                    bgMusic.play().then(() => {
+                        musicIcon.innerHTML = '<i class="fas fa-volume-up" style="color: #ec4899;"></i>';
+                        musicText.innerText = 'Pause Music';
+                    }).catch(e => {});
+                }
+                document.body.removeEventListener('click', tryPlay);
+            }, { once: true });
+        });
+    </script>
+    
+    <!-- Script for Visitor Notification (Telegram) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // ==========================================
+            // LOGIKA FORM PESAN ANONIM (VIA WEB3FORMS KE EMAIL)
+            // ==========================================
+            const anonForm = document.getElementById('anonMessageForm');
+            const formStatus = document.getElementById('formStatus');
+            
+            if(anonForm) {
+                anonForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    formStatus.style.color = '#a78bfa';
+                    formStatus.innerText = 'Mengirim pesan...';
+                    
+                    const formData = new FormData(anonForm);
+                    const object = Object.fromEntries(formData);
+                    const json = JSON.stringify(object);
+                    
+                    fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: json
+                    })
+                    .then(async (response) => {
+                        let json = await response.json();
+                        if (response.status == 200) {
+                            formStatus.style.color = '#34d399';
+                            formStatus.innerText = '\u2705 Pesan berhasil terkirim!';
+                            anonForm.reset();
+                        } else {
+                            formStatus.style.color = '#fb7185';
+                            formStatus.innerText = '\u274C Gagal: ' + json.message;
+                        }
+                    })
+                    .catch(error => {
+                        formStatus.style.color = '#fb7185';
+                        formStatus.innerText = '\u274C Gagal mengirim pesan. Coba lagi nanti.';
+                        console.log(error);
+                    });
+                });
+            }
+            
+            // ==========================================
+            // LOGIKA SCROLL REVEAL ANIMATION (PRO MAX)
+            // ==========================================
+            const revealElements = document.querySelectorAll('.reveal');
+            
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                root: null,
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            });
+            
+            revealElements.forEach(el => revealObserver.observe(el));
+        });
+    </script>
+</body>
+</html>
